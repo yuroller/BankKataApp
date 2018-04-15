@@ -11,9 +11,9 @@ using namespace testing;
 TEST(Accettazione, StampaMovimentiInOrdineCronologicoInverso)
 {
 	MockOrologio orologio;
-	RegistroTransazioni registro(orologio);
-	StampatoreDiMovimenti stampatore;
 	MockTerminale terminale;
+	RegistroTransazioni registro(orologio);
+	StampatoreDiMovimenti stampatore(terminale);
 
 	EXPECT_CALL(orologio, DataComeStringa())
 		.WillOnce(Return("01/04/2014"))

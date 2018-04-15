@@ -11,6 +11,9 @@ public:
 		data_(data)
 	{}
 
+	int importo() const { return importo_; }
+	std::string data() const { return data_;  }
+
 	bool operator==(const Transazione& other) const {
 		return other.importo_ == importo_ && other.data_ == data_;
 	}

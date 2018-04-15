@@ -1,7 +1,6 @@
 #include "stdafx.h"
 #include "RegistroTransazioni.h"
 #include "OrologioInterface.h"
-#include <stdexcept>
 
 RegistroTransazioni::RegistroTransazioni(OrologioInterface& orologio)
 	: orologio_(orologio)
