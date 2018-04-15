@@ -98,6 +98,7 @@
     <ClCompile Include="Accettazione.cpp" />
     <ClCompile Include="BankKataTest.cpp" />
     <ClCompile Include="ContoCorrenteUnit.cpp" />
+    <ClCompile Include="OrologioUnit.cpp" />
     <ClCompile Include="RegistroTransazioniUnit.cpp" />
     <ClCompile Include="stdafx.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>

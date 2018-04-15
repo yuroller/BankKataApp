@@ -3,8 +3,6 @@
 #include "RegistroTransazioniInterface.h"
 #include "StampatoreDiMovimentiInterface.h"
 
-#include <stdexcept>
-
 ContoCorrente::ContoCorrente(RegistroTransazioniInterface& registro,
 	StampatoreDiMovimentiInterface& stampatore)
 	: registro_(registro), stampatore_(stampatore)
