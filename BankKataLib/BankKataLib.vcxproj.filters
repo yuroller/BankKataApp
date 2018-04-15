@@ -39,6 +39,12 @@
     <ClInclude Include="StampatoreDiMovimenti.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="Orologio.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="OrologioInterface.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp">
@@ -51,6 +57,12 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="StampatoreDiMovimenti.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Orologio.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Transazione.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

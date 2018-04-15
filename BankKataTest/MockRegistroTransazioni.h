@@ -10,5 +10,5 @@ public:
 	MOCK_METHOD1(AggiungiPrelievo,
 		void(int importo));
 	MOCK_METHOD0(TutteLeTransazioni,
-		const std::vector<Transazione>&());
+		std::vector<Transazione>());
 };

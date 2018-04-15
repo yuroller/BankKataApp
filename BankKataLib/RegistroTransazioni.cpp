@@ -1,18 +1,24 @@
 #include "stdafx.h"
 #include "RegistroTransazioni.h"
+#include "OrologioInterface.h"
 #include <stdexcept>
+
+RegistroTransazioni::RegistroTransazioni(OrologioInterface& orologio)
+	: orologio_(orologio)
+{
+}
 
 void RegistroTransazioni::AggiungiDeposito(int importo)
 {
-	throw std::logic_error("Non implementato");
+	transazioni_.emplace_back(importo, orologio_.DataComeStringa());
 }
 
 void RegistroTransazioni::AggiungiPrelievo(int importo)
 {
-	throw std::logic_error("Non implementato");
+	transazioni_.emplace_back(-importo, orologio_.DataComeStringa());
 }
 
-const std::vector<Transazione>& RegistroTransazioni::TutteLeTransazioni()
+std::vector<Transazione> RegistroTransazioni::TutteLeTransazioni()
 {
-	throw std::logic_error("Non implementato");
+	return transazioni_;
 }

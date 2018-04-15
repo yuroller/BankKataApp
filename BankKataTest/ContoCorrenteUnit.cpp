@@ -39,7 +39,7 @@ TEST_F(ContoCorrenteUnit, StampaMovimenti)
 {
 	std::vector<Transazione> transazioni;
 	ON_CALL(registro, TutteLeTransazioni())
-		.WillByDefault(ReturnRef(transazioni));
+		.WillByDefault(Return(transazioni));
 
 	EXPECT_CALL(stampatore, Stampa(ContainerEq(transazioni)));
 
