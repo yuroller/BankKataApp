@@ -85,12 +85,16 @@
     <ClInclude Include="ContoCorrente.h" />
     <ClInclude Include="RegistroTransazioni.h" />
     <ClInclude Include="RegistroTransazioniInterface.h" />
+    <ClInclude Include="StampatoreDiMovimenti.h" />
+    <ClInclude Include="StampatoreDiMovimentiInterface.h" />
     <ClInclude Include="stdafx.h" />
     <ClInclude Include="TerminaleInterface.h" />
+    <ClInclude Include="Transazione.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="ContoCorrente.cpp" />
     <ClCompile Include="RegistroTransazioni.cpp" />
+    <ClCompile Include="StampatoreDiMovimenti.cpp" />
     <ClCompile Include="stdafx.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>

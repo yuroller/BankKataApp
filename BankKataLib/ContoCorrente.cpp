@@ -1,11 +1,13 @@
 #include "stdafx.h"
 #include "ContoCorrente.h"
 #include "RegistroTransazioniInterface.h"
+#include "StampatoreDiMovimentiInterface.h"
 
 #include <stdexcept>
 
-ContoCorrente::ContoCorrente(RegistroTransazioniInterface& registro)
-	: registro_(registro)
+ContoCorrente::ContoCorrente(RegistroTransazioniInterface& registro,
+	StampatoreDiMovimentiInterface& stampatore)
+	: registro_(registro), stampatore_(stampatore)
 {
 }
 
@@ -21,5 +23,5 @@ void ContoCorrente::Preleva(int importo)
 
 void ContoCorrente::StampaMovimenti()
 {
-	throw std::logic_error("Non implementato");
+	stampatore_.Stampa(registro_.TutteLeTransazioni());
 }

@@ -30,6 +30,15 @@
     <ClInclude Include="RegistroTransazioni.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="StampatoreDiMovimentiInterface.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Transazione.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="StampatoreDiMovimenti.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp">
@@ -39,6 +48,9 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="RegistroTransazioni.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="StampatoreDiMovimenti.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

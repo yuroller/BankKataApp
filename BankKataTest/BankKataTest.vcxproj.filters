@@ -24,6 +24,9 @@
     <ClInclude Include="MockRegistroTransazioni.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="MockStampatoreDiMovimenti.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp">

@@ -8,4 +8,5 @@ public:
 	// Inherited via RegistroTransazioniInterface
 	virtual void AggiungiDeposito(int importo) override;
 	virtual void AggiungiPrelievo(int importo) override;
+	virtual const std::vector<Transazione>& TutteLeTransazioni() override;
 };

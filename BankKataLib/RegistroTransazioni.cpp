@@ -11,3 +11,8 @@ void RegistroTransazioni::AggiungiPrelievo(int importo)
 {
 	throw std::logic_error("Non implementato");
 }
+
+const std::vector<Transazione>& RegistroTransazioni::TutteLeTransazioni()
+{
+	throw std::logic_error("Non implementato");
+}

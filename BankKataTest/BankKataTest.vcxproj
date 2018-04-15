@@ -89,6 +89,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="MockRegistroTransazioni.h" />
+    <ClInclude Include="MockStampatoreDiMovimenti.h" />
     <ClInclude Include="MockTerminale.h" />
     <ClInclude Include="stdafx.h" />
   </ItemGroup>
