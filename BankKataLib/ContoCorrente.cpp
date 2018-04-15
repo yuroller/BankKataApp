@@ -1,19 +1,22 @@
 #include "stdafx.h"
 #include "ContoCorrente.h"
+#include "RegistroTransazioniInterface.h"
+
 #include <stdexcept>
 
-ContoCorrente::ContoCorrente()
+ContoCorrente::ContoCorrente(RegistroTransazioniInterface& registro)
+	: registro_(registro)
 {
 }
 
 void ContoCorrente::Deposita(int importo)
 {
-	throw std::logic_error("Non implementato");
+	registro_.AggiungiDeposito(importo);
 }
 
 void ContoCorrente::Preleva(int importo)
 {
-	throw std::logic_error("Non implementato");
+	registro_.AggiungiPrelievo(importo);
 }
 
 void ContoCorrente::StampaMovimenti()

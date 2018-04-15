@@ -1,13 +1,15 @@
 #include "stdafx.h"
 #include "ContoCorrente.h"
-#include "MockTerminaleInterface.h"
+#include "RegistroTransazioni.h"
+#include "MockTerminale.h"
 #include "gmock/gmock.h"
 
 using namespace testing;
 
 TEST(Accettazione, StampaMovimentiInOrdineCronologicoInverso)
 {
-	MockTerminaleInterface terminale;
+	RegistroTransazioni registro;
+	MockTerminale terminale;
 	
 	{
 		InSequence stampaCronologica;
@@ -17,7 +19,7 @@ TEST(Accettazione, StampaMovimentiInOrdineCronologicoInverso)
 		EXPECT_CALL(terminale, StampaLinea("01/04/2014 |    1000 |  1000"));
 	}
 
-	ContoCorrente conto;
+	ContoCorrente conto(registro);
 
 	conto.Deposita(1000);
 	conto.Preleva(100);

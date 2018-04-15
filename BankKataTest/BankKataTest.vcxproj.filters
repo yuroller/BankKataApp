@@ -18,7 +18,10 @@
     <ClInclude Include="stdafx.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="MockTerminaleInterface.h">
+    <ClInclude Include="MockTerminale.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MockRegistroTransazioni.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
@@ -30,6 +33,9 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="Accettazione.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ContoCorrenteUnit.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

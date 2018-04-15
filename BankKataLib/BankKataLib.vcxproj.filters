@@ -24,12 +24,21 @@
     <ClInclude Include="TerminaleInterface.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="RegistroTransazioniInterface.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="RegistroTransazioni.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="ContoCorrente.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="RegistroTransazioni.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
